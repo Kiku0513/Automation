@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
-public class WindowHandles 
+public class WindowHandles3 
 {
 	static WebDriver driver;
 
