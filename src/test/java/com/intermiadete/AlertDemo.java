@@ -28,10 +28,6 @@ public class AlertDemo {
 
 		driver.switchTo().defaultContent();
 		 */
-
-
-
-
 		//3
 		JavascriptExecutor js=((JavascriptExecutor)driver);
 		js.executeScript("scrollBy(0,500)");
@@ -40,17 +36,8 @@ public class AlertDemo {
 		driver.switchTo().alert();
 		driver.switchTo().alert().accept();
 		driver.switchTo().defaultContent();
-		WebElement text=	driver.findElement(By.id("confirmResult"));
+		WebElement text=driver.findElement(By.id("confirmResult"));
 		System.out.println(text.getText());
-
-
-
-
-
-
-
-
-
 
 	}
 

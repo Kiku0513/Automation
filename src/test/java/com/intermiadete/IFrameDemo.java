@@ -16,12 +16,10 @@ public class IFrameDemo
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			
-			/*
-			 *
-			 * 1. frame name or id
+			
+			 /* 1. frame name or id
 			 * 2. frame webelement
 			 * 3. index
-			 * 
 			 */
 			
 			WebElement frame= driver.findElement(By.id("mce_0_ifr"));
