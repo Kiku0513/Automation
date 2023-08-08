@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.List;
 
 
-public class FindAllLinksByFindElements 
+public class Click_FindAllLinksByFindElements 
 {
 	static WebDriver driver;
 
