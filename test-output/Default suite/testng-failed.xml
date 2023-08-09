@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Assingment.GreenKart_CheckDiscount_Annotaions">
+      <class name="com.Assingment.GreenKartDiscount_ForNextPage">
         <methods>
-          <include name="dicount"/>
+          <include name="page2"/>
           <include name="launchBrowser"/>
         </methods>
-      </class> <!-- com.Assingment.GreenKart_CheckDiscount_Annotaions -->
+      </class> <!-- com.Assingment.GreenKartDiscount_ForNextPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

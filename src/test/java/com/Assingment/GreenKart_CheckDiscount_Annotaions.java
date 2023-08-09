@@ -26,8 +26,6 @@ public class GreenKart_CheckDiscount_Annotaions
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		JavascriptExecutor js=(JavascriptExecutor) driver;
-		js.executeScript("window,scrollTo(0,200)");
 	}
 	@Test
 
@@ -35,29 +33,93 @@ public class GreenKart_CheckDiscount_Annotaions
 
 	{
 		List<WebElement> veggies=  driver.findElements(By.xpath("//tbody/tr"));
-		for (int i = 1; i <= veggies.size(); i++) {
-			String vegName=driver.findElement(By.xpath("//tbody/tr["+ i +"]/td[1]")).getText();
-			String Price=driver.findElement(By.xpath("//tbody/tr[" + i + "]/td[2]")).getText().replace("₹", "");
-			String discount=driver.findElement(By.xpath("//tbody/tr[" + i + "]/td[3]")).getText().replace("₹", "");
 
+		  for (int i = 1; i <= veggies.size(); i++) {
+	          String vegName=driver.findElement(By.xpath("//tbody/tr["+ i +"]/td[1]")).getText();
+	          String Price=driver.findElement(By.xpath("//tbody/tr[" + i + "]/td[2]")).getText();
+	          String discount=driver.findElement(By.xpath("//tbody/tr[" + i + "]/td[3]")).getText();
 
 			double originalPrice=Double.parseDouble(Price);
 			double discountedPrice=Double.parseDouble(discount);
 
 			// Calculate the discount percentage
-			double discountText=(discountedPrice/originalPrice)*100;
+			double orgdiscount=(discountedPrice/originalPrice)*100;
 
-			System.out.printf("Vegetable name=  "+ vegName  +"with "+discountText);
+			System.out.printf("Vegetable name=  "+ vegName  +  "  with "+"discount of : %.2f", orgdiscount);
 			System.out.println("-----------------------------");
 
-			
-				if(discountText<20)	
+
+			if(orgdiscount>20)	
 				System.out.println("Vegetable with more than 20% discount: " + vegName);
-				System.out.println("-----------------------------");
-			
+			System.out.println("-----------------------------");
+
 		}
 
 
 	}
+	
+	@AfterClass
+	public void tearDown()
+	{
+		driver.close();
+	}
 
 }
+
+
+
+
+
+/*
+
+public class GreenCartDiscountPercentage {
+ WebDriver driver=null;
+ double discount1;
+ String vegName;
+ List<String> veggiesName=new ArrayList<String>();
+	@BeforeMethod
+	public void launchbrowser()
+	{
+		driver=new ChromeDriver();
+		driver.navigate().to("https://rahulshettyacademy.com/seleniumPractise/#/offers");
+		driver.manage().window().maximize();
+	}
+	@Test(priority=1)
+	public void testcase1()
+	{
+		  List<WebElement> veggies=  driver.findElements(By.xpath("//tbody/tr"));
+	      for (int i = 1; i <= veggies.size(); i++) {
+	          String vegName=driver.findElement(By.xpath("//tbody/tr["+ i +"]/td[1]")).getText();
+	          String Price=driver.findElement(By.xpath("//tbody/tr[" + i + "]/td[2]")).getText();
+	          String discount=driver.findElement(By.xpath("//tbody/tr[" + i + "]/td[3]")).getText();
+
+
+	          double originalPrice=Double.parseDouble(Price);
+	          double discountedPrice=Double.parseDouble(discount);
+
+	          // Calculate the discount percentage
+	          double discount1=(discountedPrice/originalPrice)*100;
+	          System.out.printf("Vegetable name: %s, Discount Percentage: %.2f%%\n", vegName, discount1);
+
+	          if(discount1>20)
+	          {
+	        	  veggiesName.add(vegName);
+	          }
+
+	      }
+
+
+	}
+
+	      @Test(priority=2)
+	      public void testcase2()
+	      {
+	    	  for(String vegname:veggiesName)
+	    	  {
+	    		  System.out.println("more than 20%-->"+vegname);
+	    	  }
+	    	//  int checkdiscount=20;
+	    	//  Assert.assertFalse(discount1>checkdiscount,"more than 20% " +vegName);
+
+	      }
+ */
