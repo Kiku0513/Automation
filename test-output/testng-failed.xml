@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Assingment.GreenKartDiscount_ForNextPage">
+      <class name="com.testNG.TestNG_Parameterization">
         <methods>
-          <include name="page2"/>
+          <include name="dataParamerizationUsingParameter"/>
           <include name="launchBrowser"/>
         </methods>
-      </class> <!-- com.Assingment.GreenKartDiscount_ForNextPage -->
+      </class> <!-- com.testNG.TestNG_Parameterization -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

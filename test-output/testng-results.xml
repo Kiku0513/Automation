@@ -1,60 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-09T12:22:34 IST" name="Suite" finished-at="2023-08-09T12:22:34 IST" duration-ms="211">
+  <suite started-at="2023-08-10T12:19:26 IST" name="Suite" finished-at="2023-08-10T12:19:35 IST" duration-ms="8951">
     <groups>
-      <group name="regression">
-        <method signature="TestNg_Group1.testCase3()[pri:0, instance:com.testNG.TestNg_Group1@4145bad8]" name="testCase3" class="com.testNG.TestNg_Group1"/>
-        <method signature="TestNg_Group1.testCase4()[pri:0, instance:com.testNG.TestNg_Group1@4145bad8]" name="testCase4" class="com.testNG.TestNg_Group1"/>
-      </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="TestNg_Group2.testCase6()[pri:0, instance:com.testNG.TestNg_Group2@5386659f]" name="testCase6" class="com.testNG.TestNg_Group2"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-08-09T12:22:34 IST" name="Test1" finished-at="2023-08-09T12:22:34 IST" duration-ms="79">
-      <class name="com.testNG.TestNg_Group1">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.TestNg_Group1@4145bad8]" started-at="2023-08-09T12:22:34 IST" name="beforeMethod" finished-at="2023-08-09T12:22:34 IST" duration-ms="9" status="PASS">
+    <test started-at="2023-08-10T12:19:26 IST" name="Test" finished-at="2023-08-10T12:19:35 IST" duration-ms="8951">
+      <class name="com.testNG.TestNG_Parameterization">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.testNG.TestNG_Parameterization@2e385cce]" started-at="2023-08-10T12:19:26 IST" name="launchBrowser" finished-at="2023-08-10T12:19:32 IST" duration-ms="5193" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testCase3()[pri:0, instance:com.testNG.TestNg_Group1@4145bad8]" started-at="2023-08-09T12:22:34 IST" name="testCase3" finished-at="2023-08-09T12:22:34 IST" duration-ms="6" status="PASS">
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="dataParamerizationUsingParameter(java.lang.String,java.lang.String)[pri:0, instance:com.testNG.TestNG_Parameterization@2e385cce]" started-at="2023-08-10T12:19:32 IST" name="dataParamerizationUsingParameter" finished-at="2023-08-10T12:19:35 IST" duration-ms="3643" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Parameterization in Selenium]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase3 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNG.TestNg_Group1@4145bad8]" started-at="2023-08-09T12:22:34 IST" name="afterMethod" finished-at="2023-08-09T12:22:34 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.TestNg_Group1@4145bad8]" started-at="2023-08-09T12:22:34 IST" name="beforeMethod" finished-at="2023-08-09T12:22:34 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testCase4()[pri:0, instance:com.testNG.TestNg_Group1@4145bad8]" started-at="2023-08-09T12:22:34 IST" name="testCase4" finished-at="2023-08-09T12:22:34 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase4 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNG.TestNg_Group1@4145bad8]" started-at="2023-08-09T12:22:34 IST" name="afterMethod" finished-at="2023-08-09T12:22:34 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.testNG.TestNg_Group1 -->
-    </test> <!-- Test1 -->
-    <test started-at="2023-08-09T12:22:34 IST" name="Test2" finished-at="2023-08-09T12:22:34 IST" duration-ms="11">
-      <class name="com.testNG.TestNg_Group2">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.TestNg_Group2@5386659f]" started-at="2023-08-09T12:22:34 IST" name="beforeMethod" finished-at="2023-08-09T12:22:34 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testCase6()[pri:0, instance:com.testNG.TestNg_Group2@5386659f]" started-at="2023-08-09T12:22:34 IST" name="testCase6" finished-at="2023-08-09T12:22:34 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase6 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNG.TestNg_Group2@5386659f]" started-at="2023-08-09T12:22:34 IST" name="afterMethod" finished-at="2023-08-09T12:22:34 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.testNG.TestNg_Group2 -->
-    </test> <!-- Test2 -->
+        </test-method> <!-- dataParamerizationUsingParameter -->
+      </class> <!-- com.testNG.TestNG_Parameterization -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
