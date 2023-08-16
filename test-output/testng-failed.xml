@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testNG.TestNG_Parameterization">
+      <class name="com.testNG.ReadExcelByDataProvider">
         <methods>
-          <include name="dataParamerizationUsingParameter"/>
           <include name="launchBrowser"/>
+          <include name="closeBrowsers"/>
+          <include name="fetchData"/>
         </methods>
-      </class> <!-- com.testNG.TestNG_Parameterization -->
+      </class> <!-- com.testNG.ReadExcelByDataProvider -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-10T12:19:26 IST" name="Suite" finished-at="2023-08-10T12:19:35 IST" duration-ms="8951">
+  <suite started-at="2023-08-16T16:57:55 IST" name="Default suite" finished-at="2023-08-16T16:58:26 IST" duration-ms="31027">
     <groups>
     </groups>
-    <test started-at="2023-08-10T12:19:26 IST" name="Test" finished-at="2023-08-10T12:19:35 IST" duration-ms="8951">
-      <class name="com.testNG.TestNG_Parameterization">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.testNG.TestNG_Parameterization@2e385cce]" started-at="2023-08-10T12:19:26 IST" name="launchBrowser" finished-at="2023-08-10T12:19:32 IST" duration-ms="5193" status="PASS">
+    <test started-at="2023-08-16T16:57:55 IST" name="Default test" finished-at="2023-08-16T16:58:26 IST" duration-ms="31027">
+      <class name="com.testNG.ReadExcelByDataProvider">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.testNG.ReadExcelByDataProvider@78e4deb0]" started-at="2023-08-16T16:57:56 IST" name="launchBrowser" finished-at="2023-08-16T16:57:59 IST" duration-ms="3760" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="dataParamerizationUsingParameter(java.lang.String,java.lang.String)[pri:0, instance:com.testNG.TestNG_Parameterization@2e385cce]" started-at="2023-08-10T12:19:32 IST" name="dataParamerizationUsingParameter" finished-at="2023-08-10T12:19:35 IST" duration-ms="3643" status="PASS">
+        <test-method signature="fetchData(java.lang.String,java.lang.String)[pri:0, instance:com.testNG.ReadExcelByDataProvider@78e4deb0]" started-at="2023-08-16T16:58:00 IST" name="fetchData" data-provider="fetchData" finished-at="2023-08-16T16:58:04 IST" duration-ms="4867" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -20,14 +20,90 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[Parameterization in Selenium]]>
+                <![CDATA[Manual]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dataParamerizationUsingParameter -->
-      </class> <!-- com.testNG.TestNG_Parameterization -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- fetchData -->
+        <test-method is-config="true" signature="closeBrowsers()[pri:0, instance:com.testNG.ReadExcelByDataProvider@78e4deb0]" started-at="2023-08-16T16:58:04 IST" name="closeBrowsers" finished-at="2023-08-16T16:58:05 IST" duration-ms="464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowsers -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.testNG.ReadExcelByDataProvider@78e4deb0]" started-at="2023-08-16T16:58:05 IST" name="launchBrowser" finished-at="2023-08-16T16:58:07 IST" duration-ms="1883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="fetchData(java.lang.String,java.lang.String)[pri:0, instance:com.testNG.ReadExcelByDataProvider@78e4deb0]" started-at="2023-08-16T16:58:07 IST" name="fetchData" data-provider="fetchData" finished-at="2023-08-16T16:58:11 IST" duration-ms="4523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Java]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchData -->
+        <test-method is-config="true" signature="closeBrowsers()[pri:0, instance:com.testNG.ReadExcelByDataProvider@78e4deb0]" started-at="2023-08-16T16:58:11 IST" name="closeBrowsers" finished-at="2023-08-16T16:58:12 IST" duration-ms="277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowsers -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.testNG.ReadExcelByDataProvider@78e4deb0]" started-at="2023-08-16T16:58:12 IST" name="launchBrowser" finished-at="2023-08-16T16:58:13 IST" duration-ms="1800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="fetchData(java.lang.String,java.lang.String)[pri:0, instance:com.testNG.ReadExcelByDataProvider@78e4deb0]" started-at="2023-08-16T16:58:13 IST" name="fetchData" data-provider="fetchData" finished-at="2023-08-16T16:58:18 IST" duration-ms="4832" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Automation]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchData -->
+        <test-method is-config="true" signature="closeBrowsers()[pri:0, instance:com.testNG.ReadExcelByDataProvider@78e4deb0]" started-at="2023-08-16T16:58:18 IST" name="closeBrowsers" finished-at="2023-08-16T16:58:19 IST" duration-ms="423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowsers -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.testNG.ReadExcelByDataProvider@78e4deb0]" started-at="2023-08-16T16:58:19 IST" name="launchBrowser" finished-at="2023-08-16T16:58:20 IST" duration-ms="1849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="fetchData(java.lang.String,java.lang.String)[pri:0, instance:com.testNG.ReadExcelByDataProvider@78e4deb0]" started-at="2023-08-16T16:58:20 IST" name="fetchData" data-provider="fetchData" finished-at="2023-08-16T16:58:25 IST" duration-ms="4660" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Core Java]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchData -->
+        <test-method is-config="true" signature="closeBrowsers()[pri:0, instance:com.testNG.ReadExcelByDataProvider@78e4deb0]" started-at="2023-08-16T16:58:25 IST" name="closeBrowsers" finished-at="2023-08-16T16:58:26 IST" duration-ms="435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowsers -->
+      </class> <!-- com.testNG.ReadExcelByDataProvider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
